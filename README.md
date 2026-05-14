@@ -94,6 +94,7 @@ To open the project on your computer:
 1. Download or clone this repository.
 2. Open the folder in VSCode or another editor.
 3. Open the `index.html` file in the browser.
+4. Deploy : https://gustavovitors.github.io/words-that-help-me/
 
 Basic structure:
 
