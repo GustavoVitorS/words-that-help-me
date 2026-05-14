@@ -1,73 +1,112 @@
-# Palavras que me ajudam e pode ajudar vós
+# 🕊️ Words that help me and can help you
 
-Primeira versão oficial do site do livro cristão gratuito da Vitorsz Corp.
+**Words that help me and can help you** is a free Christian project created with the purpose of sharing messages of faith, hope, reflection and getting closer to Jesus Christ.
 
-## Como abrir
+This project was born from authorial words written as a form of spiritual strengthening, consolation and direction during difficult times. The intention is to transform these words into a simple, accessible and inspiring reading experience for anyone.
 
-1. Extraia o ZIP.
-2. Abra a pasta no VSCode.
-3. Abra o `index.html` no navegador.
-4. Para editar o conteúdo, abra `data/devocionais.js`.
+---
 
-## Estrutura
+## ✨ Project objective
+
+The main objective of this website is to make a digital Christian book available for free, where each word presents a message of reflection accompanied by:
+
+- an authorial word;
+- biblical references to meditate on;
+- central truth;
+- explanation;
+- practical application;
+- spiritual reflection.
+
+The proposal is to help people who are going through moments of sadness, anxiety, fear, tiredness, emptiness, doubts or difficulties, always pointing to the light, love and hope in Christ.
+
+---
+
+## 📖 About the content
+
+The project content was written based on messages of faith and Christian encouragement. Each word seeks to convey a simple but profound spiritual direction, encouraging the reader to:
+
+- trust God more;
+- seek Jesus Christ;
+- practice love for others;
+- overcome negative thoughts;
+- restart after falls;
+- forgive;
+- be of good cheer;
+- walk with faith;
+- find hope in the Scriptures.
+
+This site does not replace reading the complete Bible, but seeks to encourage the reader to get closer to it and meditate on the Word of God.
+
+---
+
+## 🌐 About the website
+
+The website was developed as a static project using:
+
+- HTML;
+- CSS;
+- JavaScript.
+
+It has features such as:
+
+- list of words;
+- search for content;
+- filter by group;
+- reading mode;
+- pop-ups with biblical references;
+- button to read the Bible Online;
+- section encouraging donations to trustworthy institutions;
+- responsive layout for desktop and mobile.
+
+---
+
+## ❤️ Social purpose
+
+In addition to sharing Christian messages, the project also encourages practical actions of love for others.
+
+Therefore, the website has a section with links to reliable institutions, such as blood donation initiatives and hospital support. The project **does not receive money**, does not collect donations and does not intermediate payments.
+
+The intention is just to direct people to official channels where they can help other lives.
+
+---
+
+## 🔐 Security and privacy
+
+This project does not collect personal data from visitors.
+
+The website does not have:
+
+- login;
+- database;
+- registration form;
+- administrative panel;
+- payment system;
+- user tracking.
+
+As it is a static website, its purpose is to offer a simple, secure and accessible experience.
+
+---
+
+## 🚀 How to run locally
+
+To open the project on your computer:
+
+1. Download or clone this repository.
+2. Open the folder in VSCode or another editor.
+3. Open the `index.html` file in the browser.
+
+Basic structure:
 
 ```text
-palavras-vitorsz-site-v2/
-├─ index.html
-├─ css/
-│  └─ style.css
-├─ js/
-│  └─ app.js
-└─ data/
-   └─ devocionais.js
-```
-
-## O que foi ajustado nesta versão
-
-- Removido botão de WhatsApp.
-- Adicionado botão para sair do modo leitura.
-- Removida a seção de tutorial da interface pública.
-- Cada palavra recebeu estrutura própria com:
-  - Palavra do livro
-  - Versículos para meditar
-  - Verdade Central
-  - Explicação
-  - Aplicação prática
-  - Reflexão
-- Mantido layout escuro, responsivo e com estilo de livro.
-
-
-## Alterações da versão 3
-
-- Adicionada a palavra `85-10`.
-- Adicionado botão `Leia a Bíblia`, abrindo em nova guia.
-- Removida repetição na explicação das palavras.
-- Adicionada seção de incentivo à doação para instituições de saúde, com links externos oficiais.
-
-
-## Alterações da versão 4
-
-- Adicionados pop-ups responsivos nos botões de `Versículos para meditar`.
-- Cada referência bíblica abre uma janela com meditação do trecho.
-- Adicionado botão para ler a referência na Bíblia Online.
-- Adicionado botão para copiar a referência do pop-up.
-
-
-## Alterações da versão 5 — segura para publicação
-
-- Pop-ups mantidos.
-- Layout mantido.
-- Doações mantidas.
-- Favicon mantido.
-- Botão `Leia a Bíblia` mantido.
-- Adicionado arquivo `_headers` com cabeçalhos de segurança para Cloudflare Pages.
-- Adicionado `robots.txt`.
-- Adicionado `sitemap.xml`.
-- JavaScript revisado para evitar `innerHTML` nos conteúdos dinâmicos.
-
-## Atenção antes de publicar
-
-Se o link final da Cloudflare Pages for diferente de `https://palavras-vitorsz.pages.dev`, atualize esse endereço em:
-
-- `robots.txt`
-- `sitemap.xml`
+/
+├── index.html
+├── _headers
+├── robots.txt
+├── sitemap.xml
+├── README.md
+├── css/
+│ └── style.css
+├── js/
+│ └── app.js
+└── date/ 
+└── devotionals.js
