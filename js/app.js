@@ -27,6 +27,7 @@ const btnProximo = $("btn-proximo");
 const btnAleatorio = $("btn-aleatorio");
 const btnCopiar = $("btn-copiar");
 const btnLeitura = $("btn-leitura");
+const btnTema = $("btn-tema");
 const btnSairLeitura = $("btn-sair-leitura");
 const btnHome = $("btn-home");
 const btnToggleSidebar = $("btn-toggle-sidebar");
@@ -39,6 +40,31 @@ const btnFecharModal = $("btn-fechar-modal");
 const btnCopiarVersiculo = $("btn-copiar-versiculo");
 
 let referenciaAtualModal = "";
+
+const TEMA_STORAGE_KEY = "palavras-vitorsz-tema";
+
+function aplicarTema(tema) {
+  const modoLightAtivo = tema === "light";
+  document.body.classList.toggle("theme-light", modoLightAtivo);
+
+  if (btnTema) {
+    btnTema.textContent = modoLightAtivo ? "Modo Dark" : "Modo Light";
+    btnTema.setAttribute("aria-pressed", String(modoLightAtivo));
+    btnTema.setAttribute("aria-label", modoLightAtivo ? "Ativar modo escuro" : "Ativar modo claro");
+  }
+}
+
+function carregarTemaSalvo() {
+  const temaSalvo = localStorage.getItem(TEMA_STORAGE_KEY) || "dark";
+  aplicarTema(temaSalvo);
+}
+
+function alternarTema() {
+  const modoLightAtivo = document.body.classList.contains("theme-light");
+  const novoTema = modoLightAtivo ? "dark" : "light";
+  localStorage.setItem(TEMA_STORAGE_KEY, novoTema);
+  aplicarTema(novoTema);
+}
 
 function limparElemento(elemento) {
   elemento.replaceChildren();
@@ -290,6 +316,7 @@ btnProximo.addEventListener("click", () => {
 
 btnAleatorio.addEventListener("click", irAleatorio);
 btnCopiar.addEventListener("click", copiarPalavra);
+btnTema?.addEventListener("click", alternarTema);
 btnLeitura.addEventListener("click", abrirModoLeitura);
 btnSairLeitura.addEventListener("click", sairModoLeitura);
 
@@ -318,6 +345,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+  carregarTemaSalvo();
   montarGrupos();
   aplicarFiltros();
   mostrarDevocional(0);
