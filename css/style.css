@@ -35,6 +35,7 @@
   --modal-text: #dbeafe;
   --toast-bg: #111827;
   --toast-border: #374151;
+  --section-heading: #f3f4f6;
 }
 
 body.theme-light {
@@ -68,6 +69,7 @@ body.theme-light {
   --modal-text: #1e293b;
   --toast-bg: #ffffff;
   --toast-border: #cbd5e1;
+  --section-heading: #334155;
 }
 
 html {
@@ -280,7 +282,7 @@ select {
 .dev-section h3 {
   font-size: 1.02rem;
   margin-bottom: 8px;
-  color: #f3f4f6;
+  color: var(--section-heading);
 }
 
 .highlight {
@@ -744,3 +746,38 @@ body.theme-light .footer {
 body.theme-light .github-icon {
   color: #0f172a;
 }
+
+
+/* ==========================
+   CORREÇÃO DE CONTRASTE - MODO LIGHT
+========================== */
+body.theme-light .dev-section h3,
+body.theme-light .reading-card .dev-section h3,
+body.theme-light .donation-card h3,
+body.theme-light .donation-intro h2 {
+  color: #334155;
+}
+
+body.theme-light .dev-section p,
+body.theme-light .card p,
+body.theme-light .reading-card p {
+  color: #1f2937;
+}
+
+body.theme-light .dev-id,
+body.theme-light .sidebar-subtitle {
+  color: #64748b;
+}
+
+body.theme-light .palavra {
+  color: #1e293b;
+}
+
+body.theme-light .highlight h3 {
+  color: #1e3a8a;
+}
+
+body.theme-light .dev-referencia {
+  color: #1d4ed8;
+}
+
